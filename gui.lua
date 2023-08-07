@@ -1,6 +1,7 @@
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
+print("JYNX loading v1.0.1")
 
 local options = {
 	["Fast animations"] = false;
@@ -973,15 +974,16 @@ runService.RenderStepped:Connect(function(deltaTime)
 	end
 end)
 
-if game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer:FindFirstChild("RecordTab") then
-	game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer.RecordTab.Visible = false
-else
-	for _, a in ipairs(game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer:GetChildren()) do
-		if a:IsA("TextButton") then
-			a.Size = UDim2.new(0.2, 0, 1, 0)
-		end
-	end
-end
+--TODO REMOVE MOBILE CONFLICT
+-- if game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer:FindFirstChild("RecordTab") then
+-- 	game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer.RecordTab.Visible = false
+-- else
+-- 	for _, a in ipairs(game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer:GetChildren()) do
+-- 		if a:IsA("TextButton") then
+-- 			a.Size = UDim2.new(0.2, 0, 1, 0)
+-- 		end
+-- 	end
+-- end
 
 
 local clickPos = {}
@@ -1232,101 +1234,204 @@ _SearchSetting:GetPropertyChangedSignal("Text"):Connect(function()
 end)
 reloadSettings()
 
---####JYNXTAB####
+--TODO REMOVE MOBILE CONFLICT
+-- --####JYNXTAB####
+-- --Compiled using SIMPLE GUI COMPILER
+-- --SIMPLE GUI CONVERTER BY R_299P
+
+-- --##Variables##
+-- local AspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+-- local TabSelection = Instance.new("ImageLabel")
+-- local JynxTab = Instance.new("TextButton")
+-- local Icon = Instance.new("ImageLabel")
+-- local Title = Instance.new("TextLabel")
+
+-- --##Properties##
+
+-- --AspectRatioConstraint
+-- AspectRatioConstraint.AspectRatio = 1.024999976158142
+-- AspectRatioConstraint.Name = "AspectRatioConstraint"
+-- AspectRatioConstraint.Parent = Icon
+
+-- --TabSelection
+-- TabSelection.ZIndex = 3
+-- TabSelection.SliceCenter = Rect.new(3, 1, 4, 5)
+-- TabSelection.ScaleType = Enum.ScaleType.Slice
+-- TabSelection.NextSelectionDown = nil
+-- TabSelection.Parent = JynxTab
+-- TabSelection.Name = "TabSelection"
+-- TabSelection.Image = "rbxasset://textures/ui/Settings/MenuBarAssets/MenuSelection.png"
+-- TabSelection.NextSelectionRight = nil
+-- TabSelection.NextSelectionUp = nil
+-- TabSelection.Size = UDim2.new(1, 0, 0, 6)
+-- TabSelection.NextSelectionLeft = nil
+-- TabSelection.RootLocalizationTable = nil
+-- TabSelection.Visible = false
+-- TabSelection.BorderColor3 = Color3.fromRGB(27, 42, 53)
+-- TabSelection.BackgroundTransparency = 1
+-- TabSelection.SelectionImageObject = nil
+-- TabSelection.Position = UDim2.new(0, 0, 1, -6)
+
+-- --JynxTab
+-- JynxTab.Active = true
+-- JynxTab.ZIndex = 3
+-- JynxTab.FontFace = Font.new("rbxasset://fonts/families/LegacyArial.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+-- JynxTab.TextColor3 = Color3.fromRGB(27, 42, 53)
+-- JynxTab.NextSelectionUp = nil
+-- JynxTab.NextSelectionRight = nil
+-- JynxTab.Size = UDim2.new(0.20000000298023224, 0, 1, 0)
+-- JynxTab.Name = "JynxTab"
+-- JynxTab.BorderColor3 = Color3.fromRGB(27, 42, 53)
+-- JynxTab.Text = ""
+-- JynxTab.NextSelectionLeft = nil
+-- JynxTab.NextSelectionDown = nil
+-- JynxTab.RootLocalizationTable = nil
+-- JynxTab.BackgroundTransparency = 1
+-- JynxTab.SelectionImageObject = nil
+-- JynxTab.Parent = game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer
+
+-- --Icon
+-- Icon.ZIndex = 3
+-- Icon.NextSelectionDown = nil
+-- Icon.Parent = JynxTab
+-- Icon.Name = "Icon"
+-- Icon.Image = "rbxassetid://7931216247"
+-- Icon.NextSelectionRight = nil
+-- Icon.NextSelectionUp = nil
+-- Icon.Size = UDim2.new(0, 44, 0, 37)
+-- Icon.NextSelectionLeft = nil
+-- Icon.RootLocalizationTable = nil
+-- Icon.BorderColor3 = Color3.fromRGB(27, 42, 53)
+-- Icon.ImageTransparency = 0.5
+-- Icon.BackgroundTransparency = 1
+-- Icon.SelectionImageObject = nil
+-- Icon.Position = UDim2.new(0, 15, 0.5, -18)
+
+-- --Title
+-- Title.ZIndex = 3
+-- Title.NextSelectionDown = nil
+-- Title.TextXAlignment = Enum.TextXAlignment.Left
+-- Title.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+-- Title.TextTransparency = 0.5
+-- Title.Parent = Icon
+-- Title.TextSize = 24
+-- Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+-- Title.Position = UDim2.new(1.2000000476837158, 0, 0, 0)
+-- Title.NextSelectionRight = nil
+-- Title.Size = UDim2.new(1.0499999523162842, 0, 1, 0)
+-- Title.Name = "Title"
+-- Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
+-- Title.Text = "Jynx"
+-- Title.NextSelectionUp = nil
+-- Title.NextSelectionLeft = nil
+-- Title.RootLocalizationTable = nil
+-- Title.BackgroundTransparency = 1
+-- Title.SelectionImageObject = nil
+
+-- JynxTab.MouseButton1Click:Connect(function()
+-- 	_Jynx.Enabled = true
+-- end)
+
+--TODO REMOVE MOBILE CONFLICT
 --Compiled using SIMPLE GUI COMPILER
 --SIMPLE GUI CONVERTER BY R_299P
 
 --##Variables##
-local AspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local TabSelection = Instance.new("ImageLabel")
-local JynxTab = Instance.new("TextButton")
-local Icon = Instance.new("ImageLabel")
-local Title = Instance.new("TextLabel")
+local _Background = Instance.new("ImageButton")
+local _StateOverlay = Instance.new("ImageLabel")
+local _ChatIcon = Instance.new("TextButton")
+local _Icon = Instance.new("ImageLabel")
+local _BadgeContainer = Instance.new("Frame")
 
 --##Properties##
 
---AspectRatioConstraint
-AspectRatioConstraint.AspectRatio = 1.024999976158142
-AspectRatioConstraint.Name = "AspectRatioConstraint"
-AspectRatioConstraint.Parent = Icon
+--_Background
+_Background.Active = true
+_Background.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+_Background.Name = "Background"
+_Background.RootLocalizationTable = nil
+_Background.Parent = _ChatIcon
+_Background.NextSelectionUp = nil
+_Background.NextSelectionDown = nil
+_Background.NextSelectionLeft = nil
+_Background.AnchorPoint = Vector2.new(0, 1)
+_Background.Image = "rbxasset://textures/ui/TopBar/iconBase.png"
+_Background.NextSelectionRight = nil
+_Background.Size = UDim2.new(0, 32, 0, 32)
+_Background.BorderColor3 = Color3.fromRGB(27, 42, 53)
+_Background.BackgroundTransparency = 1
+_Background.SelectionImageObject = nil
+_Background.Position = UDim2.new(0, 0, 1, 0)
 
---TabSelection
-TabSelection.ZIndex = 3
-TabSelection.SliceCenter = Rect.new(3, 1, 4, 5)
-TabSelection.ScaleType = Enum.ScaleType.Slice
-TabSelection.NextSelectionDown = nil
-TabSelection.Parent = JynxTab
-TabSelection.Name = "TabSelection"
-TabSelection.Image = "rbxasset://textures/ui/Settings/MenuBarAssets/MenuSelection.png"
-TabSelection.NextSelectionRight = nil
-TabSelection.NextSelectionUp = nil
-TabSelection.Size = UDim2.new(1, 0, 0, 6)
-TabSelection.NextSelectionLeft = nil
-TabSelection.RootLocalizationTable = nil
-TabSelection.Visible = false
-TabSelection.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TabSelection.BackgroundTransparency = 1
-TabSelection.SelectionImageObject = nil
-TabSelection.Position = UDim2.new(0, 0, 1, -6)
+--_StateOverlay
+_StateOverlay.ZIndex = 2
+_StateOverlay.SliceCenter = Rect.new(8, 8, 8, 8)
+_StateOverlay.ScaleType = Enum.ScaleType.Slice
+_StateOverlay.NextSelectionDown = nil
+_StateOverlay.Parent = _Background
+_StateOverlay.Name = "StateOverlay"
+_StateOverlay.Image = "rbxasset://LuaPackages/Packages/_Index/UIBlox/UIBlox/AppImageAtlas/img_set_1x_1.png"
+_StateOverlay.ImageRectSize = Vector2.new(17, 17)
+_StateOverlay.NextSelectionRight = nil
+_StateOverlay.NextSelectionUp = nil
+_StateOverlay.Size = UDim2.new(1, 0, 1, 0)
+_StateOverlay.NextSelectionLeft = nil
+_StateOverlay.RootLocalizationTable = nil
+_StateOverlay.BorderColor3 = Color3.fromRGB(27, 42, 53)
+_StateOverlay.ImageTransparency = 1
+_StateOverlay.ImageRectOffset = Vector2.new(402, 494)
+_StateOverlay.BackgroundTransparency = 1
+_StateOverlay.SelectionImageObject = nil
 
---JynxTab
-JynxTab.Active = true
-JynxTab.ZIndex = 3
-JynxTab.FontFace = Font.new("rbxasset://fonts/families/LegacyArial.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-JynxTab.TextColor3 = Color3.fromRGB(27, 42, 53)
-JynxTab.NextSelectionUp = nil
-JynxTab.NextSelectionRight = nil
-JynxTab.Size = UDim2.new(0.20000000298023224, 0, 1, 0)
-JynxTab.Name = "JynxTab"
-JynxTab.BorderColor3 = Color3.fromRGB(27, 42, 53)
-JynxTab.Text = ""
-JynxTab.NextSelectionLeft = nil
-JynxTab.NextSelectionDown = nil
-JynxTab.RootLocalizationTable = nil
-JynxTab.BackgroundTransparency = 1
-JynxTab.SelectionImageObject = nil
-JynxTab.Parent = game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer
+--_ChatIcon
+_ChatIcon.LayoutOrder = 3
+_ChatIcon.Active = true
+_ChatIcon.FontFace = Font.new("rbxasset://fonts/families/LegacyArial.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+_ChatIcon.TextColor3 = Color3.fromRGB(27, 42, 53)
+_ChatIcon.NextSelectionUp = nil
+_ChatIcon.NextSelectionRight = nil
+_ChatIcon.Size = UDim2.new(0, 44, 1, 0)
+_ChatIcon.Name = "ChatIcon"
+_ChatIcon.Selectable = false
+_ChatIcon.BorderColor3 = Color3.fromRGB(27, 42, 53)
+_ChatIcon.Text = ""
+_ChatIcon.NextSelectionLeft = nil
+_ChatIcon.NextSelectionDown = nil
+_ChatIcon.RootLocalizationTable = nil
+_ChatIcon.BackgroundTransparency = 1
+_ChatIcon.SelectionImageObject = nil
 
---Icon
-Icon.ZIndex = 3
-Icon.NextSelectionDown = nil
-Icon.Parent = JynxTab
-Icon.Name = "Icon"
-Icon.Image = "rbxassetid://7931216247"
-Icon.NextSelectionRight = nil
-Icon.NextSelectionUp = nil
-Icon.Size = UDim2.new(0, 44, 0, 37)
-Icon.NextSelectionLeft = nil
-Icon.RootLocalizationTable = nil
-Icon.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Icon.ImageTransparency = 0.5
-Icon.BackgroundTransparency = 1
-Icon.SelectionImageObject = nil
-Icon.Position = UDim2.new(0, 15, 0.5, -18)
+--_Icon
+_Icon.NextSelectionDown = nil
+_Icon.Parent = _Background
+_Icon.Name = "Icon"
+_Icon.AnchorPoint = Vector2.new(0.5, 0.5)
+_Icon.Image = "rbxasset://textures/ui/TopBar/chatOff.png"
+_Icon.NextSelectionRight = nil
+_Icon.NextSelectionUp = nil
+_Icon.Size = UDim2.new(0, 20, 0, 20)
+_Icon.NextSelectionLeft = nil
+_Icon.RootLocalizationTable = nil
+_Icon.BorderColor3 = Color3.fromRGB(27, 42, 53)
+_Icon.BackgroundTransparency = 1
+_Icon.SelectionImageObject = nil
+_Icon.Position = UDim2.new(0.5, 0, 0.5, 0)
 
---Title
-Title.ZIndex = 3
-Title.NextSelectionDown = nil
-Title.TextXAlignment = Enum.TextXAlignment.Left
-Title.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-Title.TextTransparency = 0.5
-Title.Parent = Icon
-Title.TextSize = 24
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.Position = UDim2.new(1.2000000476837158, 0, 0, 0)
-Title.NextSelectionRight = nil
-Title.Size = UDim2.new(1.0499999523162842, 0, 1, 0)
-Title.Name = "Title"
-Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Title.Text = "Jynx"
-Title.NextSelectionUp = nil
-Title.NextSelectionLeft = nil
-Title.RootLocalizationTable = nil
-Title.BackgroundTransparency = 1
-Title.SelectionImageObject = nil
-
-JynxTab.MouseButton1Click:Connect(function()
-	_Jynx.Enabled = true
-end)
+--_BadgeContainer
+_BadgeContainer.ZIndex = 2
+_BadgeContainer.NextSelectionDown = nil
+_BadgeContainer.Parent = _ChatIcon
+_BadgeContainer.NextSelectionRight = nil
+_BadgeContainer.Size = UDim2.new(1, 0, 1, 0)
+_BadgeContainer.Name = "BadgeContainer"
+_BadgeContainer.BorderColor3 = Color3.fromRGB(27, 42, 53)
+_BadgeContainer.NextSelectionUp = nil
+_BadgeContainer.NextSelectionLeft = nil
+_BadgeContainer.RootLocalizationTable = nil
+_BadgeContainer.BackgroundTransparency = 1
+_BadgeContainer.SelectionImageObject = nil
+_ChatIcon.Parent = game.CoreGui.TopBarApp.TopBarFrame.LeftFrame
 
 _Jynx.Parent = game.CoreGui
+
+print("JYNX loaded v1.0.1")
