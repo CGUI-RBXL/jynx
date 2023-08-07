@@ -973,10 +973,10 @@ runService.RenderStepped:Connect(function(deltaTime)
 	end
 end)
 
-if game.CoreGui.RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarContainer:FindFirstChild("RecordTab") then
-	game.CoreGui.RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarContainer.RecordTab.Visible = false
+if game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer:FindFirstChild("RecordTab") then
+	game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer.RecordTab.Visible = false
 else
-	for _, a in ipairs(game.CoreGui.RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarContainer:GetChildren()) do
+	for _, a in ipairs(game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer:GetChildren()) do
 		if a:IsA("TextButton") then
 			a.Size = UDim2.new(0.2, 0, 1, 0)
 		end
@@ -1285,7 +1285,7 @@ JynxTab.NextSelectionDown = nil
 JynxTab.RootLocalizationTable = nil
 JynxTab.BackgroundTransparency = 1
 JynxTab.SelectionImageObject = nil
-JynxTab.Parent = game.CoreGui.RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarContainer
+JynxTab.Parent = game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer
 
 --Icon
 Icon.ZIndex = 3
@@ -1329,7 +1329,7 @@ JynxTab.MouseButton1Click:Connect(function()
 	_Jynx.Enabled = true
 end)
 
-game.CoreGui.RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarContainer.HelpTab.MouseButton1Click:Connect(function()
+game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBar.HubBarContainer.HelpTab.MouseButton1Click:Connect(function()
 	_Jynx.Enabled = true
 end)
 
