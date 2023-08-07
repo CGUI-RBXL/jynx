@@ -1334,3 +1334,5 @@ game.CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.HubBa
 end)
 
 _Jynx.Parent = game.CoreGui
+
+print("JYNX loaded v1.0.1")
