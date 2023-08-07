@@ -1432,6 +1432,14 @@ _BadgeContainer.BackgroundTransparency = 1
 _BadgeContainer.SelectionImageObject = nil
 _ChatIcon.Parent = game.CoreGui.TopBarApp.TopBarFrame.LeftFrame
 
+_ChatIcon.MouseButton1Click:Connect(function()
+	_Jynx.Enabled = true
+end)
+
+_Background.MouseButton1Click:Connect(function()
+	_Jynx.Enabled = true
+end)
+
 _Jynx.Parent = game.CoreGui
 
 print("JYNX loaded v1.0.1")
