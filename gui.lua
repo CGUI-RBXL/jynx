@@ -1,6 +1,7 @@
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
+print("JYNX loading v1.0.1")
 
 local options = {
 	["Fast animations"] = false;
