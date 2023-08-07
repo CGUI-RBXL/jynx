@@ -1382,6 +1382,7 @@ _StateOverlay.ImageTransparency = 1
 _StateOverlay.ImageRectOffset = Vector2.new(402, 494)
 _StateOverlay.BackgroundTransparency = 1
 _StateOverlay.SelectionImageObject = nil
+_StateOverlay.Active = false
 
 --_ChatIcon
 _ChatIcon.LayoutOrder = 3
@@ -1416,6 +1417,7 @@ _Icon.BorderColor3 = Color3.fromRGB(27, 42, 53)
 _Icon.BackgroundTransparency = 1
 _Icon.SelectionImageObject = nil
 _Icon.Position = UDim2.new(0.5, 0, 0.5, 0)
+_Icon.Active = false
 
 --_BadgeContainer
 _BadgeContainer.ZIndex = 2
@@ -1430,6 +1432,7 @@ _BadgeContainer.NextSelectionLeft = nil
 _BadgeContainer.RootLocalizationTable = nil
 _BadgeContainer.BackgroundTransparency = 1
 _BadgeContainer.SelectionImageObject = nil
+_BadgeContainer.Active = false
 _ChatIcon.Parent = game.CoreGui.TopBarApp.TopBarFrame.LeftFrame
 
 _ChatIcon.MouseButton1Click:Connect(function()
