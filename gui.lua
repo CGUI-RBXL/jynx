@@ -1329,4 +1329,8 @@ JynxTab.MouseButton1Click:Connect(function()
 	_Jynx.Enabled = true
 end)
 
+game.CoreGui.RobloxGui.SettingsShield.SettingsShield.MenuContainer.HubBar.HubBarContainer.HelpTab.MouseButton1Click:Connect(function()
+	_Jynx.Enabled = true
+end)
+
 _Jynx.Parent = game.CoreGui
